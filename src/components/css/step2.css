@@ -1,0 +1,147 @@
+.step2-form{
+    width: 100%;
+}
+
+.field-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.8rem;
+    width: 100%;
+}
+
+.field.step2{
+    width: 100%;
+    
+}
+
+.sub-label{
+    width: 100%;
+    min-height: 77px;
+    border: 1px solid var(--Light-gray);
+    cursor: pointer;
+    padding: 1rem 1.5rem 1.6rem 1.5rem ;
+    border-radius: .8rem;
+}
+
+.sub-label:hover{
+    border: 1px solid var(--Purplish-blue);
+}
+
+input[type = "radio"]{
+    appearance: none;
+}
+
+.sub-label.active{
+    border: 1px solid var(--Purplish-blue); 
+}
+
+.content-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:4rem
+}
+
+.sub-title{
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.step2-price{
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+
+.discount{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--Marine-blue);
+  margin-top: .9rem;
+}
+
+.switch-wrapper{
+    grid-column: span 3;
+    background-color: #F7F9FF;
+    min-height: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}
+
+.switch-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .toggle-text{
+    color: var(--Marine-blue);
+    font-weight: 500;
+    font-size: 1.4rem;
+  }
+  
+  .toggle-text.monthly{
+    margin-left: -1.2rem;
+  }
+  
+  .step2-checkbox[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 38px;
+    height: 18px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--Marine-blue);
+    transition: .4s;
+    border-radius: 24px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: var(--Purplish-blue);
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+  
+  .slider.round {
+    border-radius: 24px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .field.button.step2{
+    margin-top: 11.6rem;
+  }
+

@@ -1,0 +1,70 @@
+.step1-form,
+.field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.step1-form {
+  gap: 2.4rem;
+}
+
+.error-label-field {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.error-label-field label{
+  font-size: 1.4rem;
+  padding-bottom: .8rem;
+}
+
+.step1-input {
+  width: 100%;
+  outline: none;
+  height: 48px;
+  border-radius: 0.8rem;
+  padding-left: 1.5rem;
+  padding-top: 3px;
+  border: 1px solid var(--Cool-gray);
+  font-size: 1.6rem;
+  color: var(--Marine-blue);
+  font-weight: 500;
+
+}
+
+input::placeholder{
+  font-size: 1.6rem;
+  letter-spacing: .008rem;
+  
+}
+
+.field.button.step1 {
+    justify-content: flex-end;
+}
+
+.error-message {
+  color: var(--Strawberry-red);
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-right: 5px;
+}
+
+.error-border{
+  border-color: var(--Strawberry-red);
+}
+
+.step1-input:focus{
+  outline: none;
+}
+
+.step1-input:hover{
+  border: 1px solid var(--Purplish-blue);
+  cursor: pointer;
+  transition: .25s ease-in;
+}
+
+
