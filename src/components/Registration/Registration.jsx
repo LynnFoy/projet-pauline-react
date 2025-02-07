@@ -3,7 +3,9 @@ import { regData } from "./regData";
 import "../css/registration.css";
 import Step1 from "../Step1/Step1";
 import Step2 from "../Step2/Step2";
-
+import Step3 from "../Step3/Step3";
+import Step4 from "../Step4/Step4";
+import Step5 from "../Step5/Step5";
 
 function Registration() {
     const [activeStep, setActiveStep] = useState(1);
@@ -40,6 +42,9 @@ function Registration() {
     const steps = [
       { id: 1, component: <Step1 incrementStep={() => handleStepChange(2)} formData={formData} setFormData={setFormData} /> },
       { id: 2, component: <Step2 incrementStep={() => handleStepChange(3)} decrementStep={() => handleStepChange(1)} formData={formData} setFormData={setFormData} /> },
+      { id: 3, component: <Step3 incrementStep={() => handleStepChange(4)} decrementStep={() => handleStepChange(2)} formData={formData} setFormData={setFormData} /> },
+      { id: 4, component: <Step4 decrementStep={() => handleStepChange(3)} formData={formData} setFormData={setFormData} changeStep={() => handleStepChange(2)} onShow={() => { setConfirm(true); handleStepChange(5); }} /> },
+      { id: 5, component: <Step5 onClose={() => { setConfirm(false); resetForm(); handleStepChange(1); }} /> }
     ];
   
     return (

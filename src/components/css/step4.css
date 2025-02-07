@@ -1,0 +1,95 @@
+.summary-wrapper{
+    width: 100%;
+    
+}
+.summary{
+    width: 100%;
+    min-height: 182px;
+    background-color: #F7F9FF;
+    border-radius: .64rem;
+    margin-top: 4rem;
+    padding: 2.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.adds-on-wrapper,.sub-price-wrapper,.total-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sub-price-wrapper{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #E7E7ED;
+}
+.sub-change-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: flex-start;
+}
+.sub-name{
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+.sub-price{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--Marine-blue);
+    margin-bottom: 3px;
+}
+.change-btn{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #9999A2;
+    color: var(--Cool-gray);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.adds-on-wrapper{
+    margin-top: 1.8rem;
+}
+.service-name-container,.service-price-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.9rem;
+}
+.service-price-container{
+    gap: 1.7rem;
+}
+.service-name{
+  font-size: 1.4rem;  
+}
+.service-price{
+    color: var(--Marin-blue);
+    font-size: 1.4rem;  
+    font-weight: 400;
+}
+.total-wrapper{
+    margin-top: .8rem;
+    padding: 2.1rem;
+
+}
+.total-name{
+    font-size: 1.45rem;
+    font-weight: 400;
+}
+.total-value{
+    color: var(--Purplish-blue);
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-top: -5px;
+    margin-right: 3px;
+    letter-spacing: 0.06rem;
+}
+.field.button.step4{
+margin-top: 10.7rem;
+}
+
+.change-btn:hover{
+    color: var(--Purplish-blue);
+    border-color: var(--Purplish-blue);
+}
+.btn.step4:hover{
+    border-color: var(--Purplish-blue);
+}

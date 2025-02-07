@@ -1,0 +1,26 @@
+.step5.wrapper{
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+}
+
+.step5-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.step5.title{
+    margin-top: 3rem;
+}
+
+.step5.parag{
+line-height: 1.5;
+}
+
+.step5.btn{
+    margin: 2rem;
+}
